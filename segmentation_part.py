@@ -19,8 +19,9 @@ class SegmentationPart:
             segment = np.array(seg, dtype=np.int32)
             segmentation_contours_idx.append(segment)
         bboxes = np.array(result.boxes.xyxy.cpu(), dtype="int")
-        # Getting class ids
+        #Getting class ids
         class_ids = np.array(result.boxes.cls.cpu(), dtype="int")
         # Getting scores
         scores = np.array(result.boxes.conf.cpu(), dtype="float").round(2)
+
         return bboxes, class_ids, segmentation_contours_idx, scores

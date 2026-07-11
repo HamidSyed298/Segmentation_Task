@@ -14,7 +14,7 @@ class SegmentationPart:
         segmentation_contours_idx = []
         for seg in result.masks.segments:
             # For contours
-            seg[:, 0] *= width
+            seg[:, 1] *= width
             seg[:, 1] *= height
             segment = np.array(seg, dtype=np.int32)
             segmentation_contours_idx.append(segment)

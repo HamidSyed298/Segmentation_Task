@@ -1,6 +1,6 @@
 import cv2
 from segmentation_part import SegmentationPart
-
+#import torch
 img = cv2.imread("Images/Football.jpg")
 #img = cv2.imread("Images/Football.jpg")
 # img = cv2.resize(img, None, fx=0.9, fy=0.9)

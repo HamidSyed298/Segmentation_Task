@@ -1,5 +1,6 @@
 from ultralytics import YOLO
 import numpy as np
+import torch
 
 
 class SegmentationPart:

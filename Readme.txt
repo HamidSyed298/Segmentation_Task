@@ -1,4 +1,4 @@
-Welcome to my segmentation repository, where I provide code for
+Welcome to my segmentation repository, where I provide code (scripts) for
 segmenting images and videos into different categories.
 Our repository focuses on football and person segmentation using state-of-the-art deep learning techniques.
 This code is easy to use.
